@@ -5,64 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>Home</title>
 </head>
 
 <body>
-    <div class="skip"><a href="#top">Skip to Main Content</a></div>
-    <br>
     <header>
+        <div class="skip"><a href="#top">Skip to Main Content</a></div>
         <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="photo.html">Photography&Travelling</a></li>
-                <li><a href="arts_design.html">Arts&Design</a></li>
+            <img src="images/favicon_blue_background.png" alt="logo for the site" id="logo">
+            <div class="nav_bar"><a href="#">&#9776;</a></div>
+            <ul class="nav-links" id="navlinks">
+                <li><a class="btn active" href="index.html">Home</a></li>
+                <li><a class="btn" href="photo.html">Photography&Travelling</a></li>
+                <li><a class="btn" href="arts_design.html">Arts&Design</a></li>
             </ul>
         </nav>
     </header>
     <main id="top">
 
-        <h1>Introduction</h1>
-
-        <div class="intro">
-            <p>Hi, I'm Paru Banjara.</p> <br>
-            <p>I am an Information Analysis (IA) Student in Bachelor of Science (BSI) program at the University of
-                Michigan. Besides coding, I also have a great passion of exploring in a wide variety of domains, such as
-                design, artworks, photography and travelling.</p><br>
-
-            <p>To talk about my past experiences, I have worked at different hospitals in Nepal as a student nurse. I
-                have directly worked with patients, clients, community members, and health care teams. I have worked
-                with the patients in the most critical situations, such as patient with burn, fracture vertebra,
-                post-operative patient, and patient in labor and delivery. Working as a student nurse, I not only
-                learned a lot of health care related skills and knowledge, but also gained other soft skills, such as
-                working in a team, building interpersonal relationships with people from different domains and
-                backgrounds, working under a stressful situation and acting accordingly, and providing counseling and
-                health guidance to patients and clients.</p><br>
+        <div class="intro" tabindex="0">
+            <h1>Hi, I'm Paru Banjara.</h1>
+            <img src="images/at_a_fountain_in_north_campus.jpg" alt="At the Fountain in North Campus" tabindex="0">
+            <p> I am an Information Analysis (IA) student in Bachelor of Science in Information (BSI) program at the
+                University of Michigan. Besides coding, I also have a great passion of exploring in a wide variety of
+                domains, such as design, artworks, photography and travelling. </p>
         </div>
-        <div class="images">
-            <img src="images/at_a_fountain_in_north_campus.jpg" width="800"
-                alt="At the Fountain in North Campus">
+        <div class="about_me">
+            <img class="img_home1" src="images/paru_nurse.png" alt="Night Duty at a Hospital in Nepal" tabindex="0">
+            <p tabindex="0">To talk about my past experiences, I have worked at different hospitals in Nepal as a student nurse. I have worked directly with patients, clients, community members, and health care teams. I have worked with the patients in the most critical situations, such as patient with burn, fracture vertebra, post-operative patient, and patient in labor and delivery.</p>
 
-            <img src="images/night_duty_at_hospital_in_nepal.jpg" width="800"
-                alt="Night Duty at a Hospital in Nepal">
+            <img class="img_home2" src="images/paru_cssd.png" alt=" Working at a Central Sterile Services Department as a Student">
 
-            <img src="images/me_at_central_sterile_services_department.jpg" width="800"
-                alt=" Working at a Central Sterile Services Department as a Student">
+            <p tabindex="0">Working as a student nurse, I not only learned a lot of health care related skills and knowledge, but
+                also gained other soft skills, such as working in a team, building interpersonal relationships with
+                people from different domains and backgrounds, working under a stressful situation and acting
+                accordingly, and providing counseling and health guidance to patients and clients.</p>
 
-            <img src="images/me_making_clay_pot.png" width="800"
-                alt="Making Clay Pot for a School Project">
+            <img class="img_home3" src="images/me_making_clay_pot.png"
+                    alt="Making Clay Pot for a School Project" tabindex="0">
+                    
+            <p tabindex="0">This image shows me working on making a clay pot for my
+                school project while I was in the nursing program. This project was about conducting an exibition on the topics related to the health of children from different age groups. For this project, my team and I were assigned to work on the topic called weaning. </p>
 
-            <img src="images/picking_juneberries.jpg" width="800" alt="Picking Juneberries">
-
+            <img class="img_home4" src="images/picking_juneberries_transform.jpg" alt="Picking Juneberries" tabindex="0">
+            <p tabindex="0"> During my free time, I like to explore around by going for a walk in the woods, picking wild berries, and looking for wild mushrooms. </p>
         </div>
-
-        <a href="#top">Jump to top of page</a>
+        <div class="suggestions">
+            <h2>Want to connect or have suggestions?</h2>
+            <p>Send me a message!</p>
+        </div>
+        <div class="form">
+            
+            <form action="https://formspree.io/f/xvoybqdq" method="POST">
+            <label for="fname">First Name</label><input type="text" id="fname" name="Firstname" placeholder="First Name">
+            <label for="lname">Last Name</label><input type="text" id="lname" name="Lastname" placeholder="Last Name">
+            <label for="email">Your Email: <input type="text" id ="email" name="Email" placeholder="Email"></label>
+            <label>Your message: <textarea id ="message" name="Message" placeholder="Type Your Message"></textarea>
+            </label>
+            <button type="submit" id="send">Send</button>
+          </form>
+        </div>
+        <div class="top"> <a href="#top"> &#8963; </a>
+        </div>
     </main>
     <footer>
-        <p>&copy; Paru Banjara - Web Design And Accessibility Project 2022</p>
+        <p>&copy; Paru Banjara - Web Design, Development, and Accessibility Project 2022</p>
     </footer>
 </body>
 
