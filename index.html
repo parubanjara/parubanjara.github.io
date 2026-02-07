@@ -1,80 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script src="js/script.js"></script>
     <title>Home</title>
-</head>
-
-<body>
+  </head>
+  <body>
     <header>
-        <div class="skip"><a href="#top">Skip to Main Content</a></div>
-        <nav>
-            <img src="images/favicon_blue_background.png" alt="logo for the site" id="logo">
-            <div class="nav_bar"><a href="#">&#9776;</a></div>
-            <ul class="nav-links" id="navlinks">
-                <li><a class="btn active" href="index.html">Home</a></li>
-                <li><a class="btn" href="photo.html">Photography&Travelling</a></li>
-                <li><a class="btn" href="arts_design.html">Arts&Design</a></li>
-            </ul>
-        </nav>
+      <div class="skip"><a href="#top">Skip to Main Content</a></div>
+      <nav>
+        <img
+          src="images/favicon_blue_background.png"
+          alt="logo for the site"
+          id="logo"
+        />
+        <div class="nav_bar"><a href="#">&#9776;</a></div>
+        <ul class="nav-links" id="navlinks">
+          <li><a class="btn active" href="index.html">Home</a></li>
+          <li><a class="btn active" href="resume.html">Resume</a></li>
+          <li></li>
+        </ul>
+      </nav>
     </header>
-    <main id="top">
-
-        <div class="intro" tabindex="0">
-            <h1>Hi, I'm Paru Banjara.</h1>
-            <img src="images/at_a_fountain_in_north_campus.jpg" alt="At the Fountain in North Campus" tabindex="0">
-            <p> I am an Information Analysis (IA) student in Bachelor of Science in Information (BSI) program at the
-                University of Michigan. Besides coding, I also have a great passion of exploring in a wide variety of
-                domains, such as design, artworks, photography and travelling. </p>
-        </div>
-        <div class="about_me">
-            <img class="img_home1" src="images/paru_nurse.png" alt="Night Duty at a Hospital in Nepal" tabindex="0">
-            <p tabindex="0">To talk about my past experiences, I have worked at different hospitals in Nepal as a student nurse. I have worked directly with patients, clients, community members, and health care teams. I have worked with the patients in the most critical situations, such as patient with burn, fracture vertebra, post-operative patient, and patient in labor and delivery.</p>
-
-            <img class="img_home2" src="images/paru_cssd.png" alt=" Working at a Central Sterile Services Department as a Student">
-
-            <p tabindex="0">Working as a student nurse, I not only learned a lot of health care related skills and knowledge, but
-                also gained other soft skills, such as working in a team, building interpersonal relationships with
-                people from different domains and backgrounds, working under a stressful situation and acting
-                accordingly, and providing counseling and health guidance to patients and clients.</p>
-
-            <img class="img_home3" src="images/me_making_clay_pot.png"
-                    alt="Making Clay Pot for a School Project" tabindex="0">
-                    
-            <p tabindex="0">This image shows me working on making a clay pot for my
-                school project while I was in the nursing program. This project was about conducting an exibition on the topics related to the health of children from different age groups. For this project, my team and I were assigned to work on the topic called weaning. </p>
-
-            <img class="img_home4" src="images/picking_juneberries_transform.jpg" alt="Picking Juneberries" tabindex="0">
-            <p tabindex="0"> During my free time, I like to explore around by going for a walk in the woods, picking wild berries, and looking for wild mushrooms. </p>
-        </div>
-        <div class="suggestions">
-            <h2>Want to connect or have suggestions?</h2>
-            <p>Send me a message!</p>
-        </div>
-        <div class="form">
-            
-            <form action="https://formspree.io/f/xvoybqdq" method="POST">
-            <label for="fname">First Name</label><input type="text" id="fname" name="Firstname" placeholder="First Name">
-            <label for="lname">Last Name</label><input type="text" id="lname" name="Lastname" placeholder="Last Name">
-            <label for="email">Your Email: <input type="text" id ="email" name="Email" placeholder="Email"></label>
-            <label>Your message: <textarea id ="message" name="Message" placeholder="Type Your Message"></textarea>
-            </label>
-            <button type="submit" id="send">Send</button>
-          </form>
-        </div>
-        <div class="top"> <a href="#top"> &#8963; </a>
-        </div>
+    <main id="top" class="home">
+      <section class="intro" tabindex="0">
+        <h1 tabindex="0">Paru Banjara</h1>
+        <img
+          src="images/at_a_fountain_in_north_campus.jpg"
+          alt="At the Fountain in North Campus"
+          tabindex="0"
+        />
+        <p tabindex="0">
+          I am a Big Data Analytics student in Master's of Science in
+          Information (MSI) program at the University of Michigan. I am also
+          currently pursuing a graduate certificate in Spatial Analysis. I
+          completed my undergraduate degree in Information Analysis. In
+          addition, I have a health-care background. I attended a nursing
+          college in Nepal, where I had various opportunities to learn and
+          practice health-care skills during my nursing training. Besides all, I
+          have a great passion for exploring different hobbies, such as design,
+          artwork, photography, and travelling.
+        </p>
+      </section>
+      <section class="about_me">
+        <h2 tabindex="0">Nursing Experience</h2>
+        <section class="about_me_first">
+          <img
+            class="img_home1"
+            src="images/nursing_night_duty_general_ward.jpg"
+            alt="Night Duty at a Hospital in Nepal"
+            tabindex="0"
+          />
+          <p tabindex="0">
+            Before starting my career in data science, I was attending a nursing
+            school in Nepal. I worked at different hospitals as a student nurse.
+            I have worked directly with patients, clients, community members,
+            and health care teams. This picture was taken at a hospital while I
+            was working night shift in the general ward.
+          </p>
+        </section>
+        <section class="about_me_second">
+          <img
+            class="img_home2"
+            src="images/paru_cssd.png"
+            alt=" Working at a Central Sterile Services Department as a Student"
+          />
+          <p tabindex="0">
+            While working as a student nurse, I also gained soft skills, such as
+            working in a team, building interpersonal relationships with people
+            from different domains and backgrounds, working under a stressful
+            situation and acting accordingly, and providing counseling and
+            health guidance to patients and clients. This is picture of myself
+            working at a Central Sterile Services Department (CSSD). The
+            steralization equipment can be seen behind me.
+          </p>
+        </section>
+        <section class="about_me_third">
+          <img
+            class="img_home3"
+            src="images/nursing_icu_duty.jpg"
+            alt="Working in an ICU unit"
+            tabindex="0"
+          />
+          <p tabindex="0">
+            I have worked with the patients in the most critical situations,
+            such as patient with burn, fracture vertebra, post-operative
+            patient, and patient in labor and delivery. This image showcases me
+            working at an Intensive Care Unit (ICU) and documenting patient
+            information, such as vital signs, food and intravenous fluid intake,
+            medications, and other details into the patient file.
+          </p>
+        </section>
+        <section class="about_me_fourth">
+          <img
+            class="img_home4"
+            src="images/nursing_group_photo.jpg"
+            alt="Nursing Group Photo"
+            tabindex="0"
+          />
+          <p tabindex="0">
+            This is a group image of my nursing cohort. I am sitting all the way
+            to the left (second row from back). This image was taken while we
+            were visiting a Cerebral Palsy Center in Nepal, where we got to
+            learn about children with Cerebral Palsy. There, I had the chance to
+            hear about their daily struggles, progresses and intellectual
+            abilities of those children from their care takers.
+          </p>
+        </section>
+        <h2 tabindex="0">Research Experience</h2>
+        <section class="research">
+          <section class="about_me_fifth">
+            <p tabindex="0">
+              I worked as a Research Assistant where I assisted with labeling
+              thousands of plant images using a software called LabelBox for
+              training machine learning models. I used bounding box and
+              segmentation methods to annotate and produce high quality images.
+              Besides annotating images, I gained skills in effective
+              communication and research from this experience.
+            </p>
+          </section>
+          <section class="about_me_sixth">
+            <p tabindex="0">
+              I took a course called "Needs Assessment and Usability
+              Evaluation" (SI 422) as an elective. I am also interested in User
+              Experience and Research, so I took this course to explore. I
+              gained a lot of knowledge and skills from this course. I
+              interviewed several people for data collection, analysis and
+              research in order to understand the needs of the users and
+              evaluate the usability of various job search websites.
+            </p>
+          </section>
+        </section>
+      </section>
+      <section class="hobbies">
+        <p tabindex="0">
+          Here you can find pictures of my hobbies, interests, and previous
+          courseworks:
+          <a class="btn" href="photo.html">Photography&Travelling</a> and
+          <a class="btn" href="arts_design.html">Arts&Design</a>
+        </p>
+      </section>
+      <section class="top"><a href="#top"> &#8963; </a></section>
     </main>
     <footer>
-        <p>&copy; Paru Banjara - Web Design, Development, and Accessibility Project 2022</p>
+      <p>&copy; Paru Banjara 2026</p>
     </footer>
-</body>
-
+  </body>
 </html>

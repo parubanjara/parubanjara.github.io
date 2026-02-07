@@ -3,6 +3,19 @@ window.addEventListener('DOMContentLoaded', () => {
     let header = document.querySelector('header');
     let menuButton = document.querySelector('.nav_bar');
     let menu = document.querySelector('header nav ul');
+    let introText = document.querySelector('.intro p');
+    let introSection = document.querySelector('.intro');
+    let revealThreshold = 20;
+
+    if (introSection) {
+        revealThreshold = introSection.offsetTop + 20;
+    }
+
+    if (introText) {
+        introText.style.opacity = '0';
+        introText.style.pointerEvents = 'none';
+        introText.style.transition = 'opacity 0.4s ease';
+    }
 
     menuButton.addEventListener('mousedown', (event) => {
         event.preventDefault();
@@ -46,13 +59,18 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-});
 
-// clear the form after submission
-window.onbeforeunload = () => {
-    for (const form of document.getElementsByTagName('form')) {
-        form.reset();
-    }
-}
+    window.addEventListener('scroll', () => {
+        if (!introText) return;
+        if (window.scrollY > revealThreshold) {
+            introText.style.opacity = '1';
+            introText.style.pointerEvents = 'auto';
+        } else {
+            introText.style.opacity = '0';
+            introText.style.pointerEvents = 'none';
+        }
+    });
+
+});
 
 
