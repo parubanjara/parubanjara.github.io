@@ -1,0 +1,158 @@
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, .address, .contact{
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 0.5%;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3, h4{
+    margin-bottom: 2%;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+main{
+    margin: 0% 5% 0% 5%;
+    padding: 1% 3% 3% 3%;
+}
+
+#content ul{
+    display:block;
+    padding-left: 2%;
+    list-style-type:circle;
+}
+
+#lang ul{
+    padding-left: 5%;
+}
+
+li{
+    padding-bottom: 0.5%;
+}
+
+div.contact{
+    margin-bottom: 3%;
+}
+
+.skills_container{
+    margin-right: 3%;
+}
+
+.edu :nth-child(4), .edu :nth-child(8), .edu :nth-child(12) {
+    font-size: 0.9rem;
+}
+
+.experience_container{
+    display: grid;
+    margin-left: 3%;
+}
+
+div.emp, div.date-addr{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+div.emp :nth-child(5n), div.date-addr :nth-child(5n){
+    grid-column:2/3;
+    padding-left: 25%;
+}
+
+div.emp :nth-child(2), div.date-addr :nth-child(2){
+    padding-left: 50%;
+}
+
+div#hm :nth-child(2){
+    padding-left: 35%; 
+}
+
+#hm :nth-child(5n){
+    padding-left: 55%; 
+}
+
+div.emp :nth-child(4n), div.date-addr :nth-child(4n){
+    grid-column:1/2;
+}
+
+@media print {
+    body{
+        font-family: Arial, sans-serif;
+        font-size: 0.85rem;
+    }
+
+    header, footer, #print li{
+        display: none;
+    }
+
+    main{
+        background-color: #FFFFFF;
+        padding: 0%;
+    }
+
+    #content ul{
+        padding-left: 3%;
+        margin: 0%;
+    }
+
+    #lang ul{
+        padding-left: 9%;
+    }
+
+    h2{
+        font-size: 0.95rem;
+    }
+
+    .skills_container{
+        background-color: #f9f2cc;
+        padding: 0px 10px 0px 10px;
+        margin-bottom: 0%;
+    }
+
+    .edu :nth-child(4) {
+        font-size: 8px;
+    }
+    
+    .edu :nth-child(8) {
+        font-size: 8px;
+    }
+    
+    .edu :nth-child(12) {
+        font-size: 8px;
+    }
+
+    div.date-addr :nth-child(5n){
+        grid-column:2/3;
+        padding-left: 10%;
+    }
+    
+    #um :nth-child(2){
+        padding-left: 45%; 
+    }
+    
+    div.date-addr :nth-child(2){
+        padding-left: 27%;
+    }
+    
+    #hm :nth-child(5n){
+        padding-left: 47%; 
+    }
+}
+
+p {
+    color: black;
+}
+
