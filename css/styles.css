@@ -1,5 +1,4 @@
 :root {
-  --bg: #ffffff;
   --surface: #ffffff;
   --text: #1f2328;
   --muted: #5b5f66;
@@ -89,7 +88,6 @@ img {
 
 header {
   width: min(1120px, 92vw);
-  border-bottom: 1px #f2f4f4 double;
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
   top: 0;
@@ -195,11 +193,6 @@ main a {
 }
 
 .about_me {
-  /* display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    justify-items: center;
-    margin-bottom: 3rem; */
   display: flex;
   flex-direction: column;
 }
@@ -252,20 +245,6 @@ main a {
   box-shadow: var(--shadow);
   margin: 2rem 5rem 0rem 0rem;
   font-size: 14%;
-}
-
-.research {
-  display: grid;
-  grid-column: -3 / -1;
-}
-
-.research :first-child {
-  grid-column: -3 / -2;
-}
-
-label {
-  font-size: 1rem;
-  color: var(--text);
 }
 
 .photo_texts {
@@ -381,10 +360,6 @@ footer {
     margin: 0 0 0rem 2rem;
   }
 
-  .about_me {
-    grid-template-columns: 35% 65%;
-  }
-
   .about_me p {
     font-size: 1rem;
   }
@@ -424,7 +399,6 @@ footer {
   }
 
   .about_me {
-    grid-template-columns: 35% 65%;
     justify-content: center;
     align-items: center;
   }
