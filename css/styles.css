@@ -166,6 +166,7 @@ main a {
   align-items: center;
   margin-bottom: 3rem;
   position: relative;
+  min-height: 300px;
 }
 
 .intro img {
