@@ -1,31 +1,29 @@
 window.addEventListener('DOMContentLoaded', () => {
-    let introText = document.querySelector('.intro p');
-    let introSection = document.querySelector('.intro');
-    let revealThreshold = 20;
+    const introText = document.querySelector('.intro p');
+    const introSection = document.querySelector('.intro');
 
-    if (introSection) {
-        revealThreshold = introSection.offsetTop + 20;
-    }
+    if (!introText || !introSection) return;
 
-    if (introText) {
-        introText.style.opacity = '0';
-        introText.style.pointerEvents = 'none';
-        introText.style.transition = 'opacity 0.4s ease';
-    }
+    let revealThreshold = introSection.offsetTop + 20;
+    let ticking = false;
 
-    window.addEventListener('scroll', () => {
-        if (!introText) return;
-        if (window.scrollY > revealThreshold) {
-            introText.style.display = "flex"
-            introText.style.opacity = '1';
-            introText.style.pointerEvents = 'auto';
-            introText.classList.add("fade-in-box");
-        } else {
-            introText.style.opacity = '0';
-            introText.style.pointerEvents = 'none';
-            introText.style.display = "none";
-            // introText.classList.remove("fade-in-box");
+    const updateIntroVisibility = () => {
+        introText.classList.toggle('is-visible', window.scrollY > revealThreshold);
+        ticking = false;
+    };
+
+    const requestVisibilityUpdate = () => {
+        if (!ticking) {
+            window.requestAnimationFrame(updateIntroVisibility);
+            ticking = true;
         }
+    };
+
+    window.addEventListener('scroll', requestVisibilityUpdate);
+    window.addEventListener('resize', () => {
+        revealThreshold = introSection.offsetTop + 20;
+        requestVisibilityUpdate();
     });
 
+    updateIntroVisibility();
 });
