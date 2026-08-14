@@ -132,6 +132,10 @@ header nav .nav_bar,
   line-height: 1.05;
 }
 
+.home > .site_identity {
+    margin-bottom: 1rem;
+  }
+
 .header_contact {
   display: flex;
   flex-wrap: wrap;
