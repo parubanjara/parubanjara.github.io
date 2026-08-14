@@ -108,6 +108,11 @@ header nav {
   gap: 1rem;
 }
 
+header nav .nav_bar,
+  header nav .nav-links {
+    margin-left: auto;
+  }
+
 #logo {
   width: 56px;
   height: auto;
