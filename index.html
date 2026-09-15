@@ -55,7 +55,7 @@
         />
         <p tabindex="0">
           I recently graduated from the Master of Science in Information program
-          with focused on Big Data Analytics at the University of Michigan. I
+          with a focus on Big Data Analytics at the University of Michigan. I
           completed my undergraduate degree in Information Science. In addition,
           I have a health-care background. I attended a nursing college in
           Nepal, where I had various opportunities to learn and practice
@@ -81,54 +81,105 @@
         <h2 tabindex="0">Data Science Experience</h2>
         <section class="data_science_first">
           <img
+            src="images/poster_capstone_graduate.png"
+            alt="Graduate Capstone Project"
+          />
+          <p tabindex="0">
+            For the graduate capstone project, I collaborated with another
+            student and built the risk-classification workflow and topic–risk
+            integration components of an NLP decision-support pipeline for
+            Reddit mental health posts. I used approximately 1,200 annotated
+            posts out of a cleaned corpus of 87,733 posts to train and compare a
+            TF-IDF and logistic-regression baseline with DistilBERT, SBERT, and
+            RoBERTa for four-level risk classification and binary high-risk
+            triage. On the held-out test set, RoBERTa offered the best balance
+            among the models evaluated, achieving 0.846 high-risk recall, 0.800
+            precision, and 0.867 PR-AUC. I then combined its predictions with my
+            teammate's BERTopic results for 34,146 posts to visualize how
+            discussion themes relate to predicted risk levels using a <strong
+              ><a
+                href="https://github.com/Social-Media-Help-Seeking-ML/pbanjara/blob/main/materials/saved_images/Topics_by_Mean_Risk.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                >heatmap</a
+              ></strong
+            >.
+            The analysis highlighted elevated risk in topics containing explicit
+            self-harm language and showed how the pipeline could help moderators
+            focus their review. Throughout the project, we treated model outputs
+            as triage signals requiring human judgment and documented
+            limitations in label quality, generalizability, bias, and privacy.
+            Please view the
+            <strong
+              ><a
+                href="https://drive.google.com/file/d/1cbaygTfcIm-D6Hc5fMZqkumi55l0zi41/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >poster</a
+              ></strong
+            >
+            and find the
+            <strong
+              ><a
+                href="https://github.com/Social-Media-Help-Seeking-ML/pbanjara"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub repository</a
+              ></strong
+            >
+            that contains the code.
+          </p>
+        </section>
+        <section class="data_science_second">
+          <img
             src="images/data_visualization_project.png"
             alt="Data Visualization Project"
           />
           <p tabindex="0">
-            This is a data visualization project for an Information
-            Visualization (SI 649) course. I worked with two other team members
-            and generated interactive visualizations using Altair. I created two
-            visualizations. The link for the website containing visualizations
-            can be found
+            This is a
             <strong
               ><a
                 href="https://parubanjara.github.io/si649-data-visualization-final-project/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >here</a
+                >data visualization project</a
               ></strong
-            >. The first one (Fig.3) compared the drug overdose death rates and
-            unemployment rates across states in the United States. The second
-            visualization (Fig.4) compared the drug overdose death rates along
-            with unemployment and poverty rates per state.
+            >
+            for an Information Visualization (SI 649) course. I worked with two
+            other team members and generated interactive visualizations using
+            Altair. I created two visualizations. The first one (Fig. 3)
+            compared the drug overdose death rates and unemployment rates across
+            states in the United States. The second visualization (Fig. 4)
+            compared the drug overdose death rates along with unemployment and
+            poverty rates per state.
           </p>
         </section>
-        <section class="data_science_second">
+        <section class="data_science_third">
           <img
             src="images/si_670.png"
-            alt="Michine and Deep Learning Project"
+            alt="Machine and Deep Learning Project"
           />
           <p tabindex="0">
-            This is a course project for Applied Machine Learning. I
-            collaborated with another student and trained models using various
-            machine learning and deep learning techniques. This project was
-            inspired by the idea of assigning helpfulness scores to the
-            responses produced by LLMs. Initially, the scoring was done manually
-            and assigned helpfulness scores of 0 to 4 (least helpful to most
-            helpful) for each response. However, this project was focused on
-            automating that process by using trained models to predict the
-            helpfulness scores. A link to the poster can be found
+            This is an Applied Machine Learning course project. I collaborated
+            with another student and trained models using various machine
+            learning and deep learning techniques. This project was inspired by
+            the idea of assigning helpfulness scores to the responses produced
+            by LLMs. Initially, each response was manually assigned a
+            helpfulness score from 0 to 4 (least helpful to most helpful).
+            However, this project was focused on automating that process by
+            using trained models to predict the helpfulness scores. Find the
             <strong
               ><a
                 href="https://docs.google.com/presentation/d/1KwZYpXK0A2dDeu5jPcFZqfyiU8EWd0q4NvB_61V9awI/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                >here</a
+                >poster</a
               ></strong
-            >.
+            >
+            for the project.
           </p>
         </section>
-        <section class="data_science_third">
+        <section class="data_science_fourth">
           <img src="images/data_mining.png" alt="Data Mining Project" />
           <p tabindex="0">
             This is a project for a Data Mining course. The objective of this
@@ -138,46 +189,57 @@
             dataset, and two geospatial datasets to perform analyses and analyze
             the relationships between cancer types and ADI in MSA. The
             preprocessing involved data cleaning in order to remove the
-            non-relevant information, change data types, and drop NAN values.
+            non-relevant information, change data types, and drop NaN values.
             Then, I performed geospatial joins in order to join the cancer and
             ADI datasets on census block groups. The methods I used include
             dimensionality reduction using Principal Component Analysis (PCA),
             correlation analysis, cluster analysis using KMeans clustering, and
-            topic modeling using Singular Value Decomposition (SVD). A link to
-            the presentation can be found
+            topic modeling using Singular Value Decomposition (SVD). Lastly, I
+            created a
             <strong
               ><a
                 href="https://docs.google.com/presentation/d/1a9unnw8Oc6iOKsCqBr13xovYmvg_8nVVaxdoJ_wrMMI/edit?usp=sharing"
                 target="_blank"
                 rel="noopener"
-                >here</a
+                >presentation</a
               ></strong
-            >.
+            >
+            for the project.
           </p>
         </section>
-        <section class="data_science_fourth">
+        <section class="data_science_fifth">
           <img src="images/si_608_project.png" alt="Networks Project" />
           <p tabindex="0">
-            This is a final course project for a Networks course. I collaborated
-            with three other students to investigate how actor and crew success
-            in the film industry is determined based on their collaboration
-            patterns within the industry. This project utilized the TMDB 5000
-            Movies Datasets from Kaggle that allowed the team to incorporate
-            rich information on cast, crew, genres, revenues, and budgets. The
-            methods used were Graph Convolutional Networks (GCNs), Community
-            Detection, and Centrality Measures (such as eigenvector centrality
-            and degree centrality). The presentation link can be found
+            This is a
+            <strong
+              ><a
+                href="https://github.com/parubanjara/networks"
+                target="_blank"
+                rel="noopener noreferrer"
+                >final course project</a
+              ></strong
+            >
+            for a Networks course. I collaborated with three other students to
+            investigate how actor and crew success in the film industry is
+            determined based on their collaboration patterns within the
+            industry. This project utilized the TMDB 5000 Movie Dataset from
+            Kaggle that allowed the team to incorporate rich information on
+            cast, crew, genres, revenues, and budgets. The methods used were
+            Graph Convolutional Networks (GCNs), Community Detection, and
+            Centrality Measures (such as eigenvector centrality and degree
+            centrality). The final
             <strong
               ><a
                 href="https://drive.google.com/file/d/1JMVbRianV6j37ZFk_9OkcwTXBG-zpq67/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                >here</a
+                >presentation</a
               ></strong
-            >.
+            >
+            incorporates research questions, motivation, methods, and results.
           </p>
         </section>
-        <section class="data_science_fifth">
+        <section class="data_science_sixth">
           <img
             src="images/si_206_final_project.png"
             alt="Object-Oriented Programming Project"
@@ -190,44 +252,42 @@
             artists and their artworks. The goal of the project was to compare
             the data for each museum to identify the average duration to
             complete the artworks. This project involved making API calls to
-            museum APIs to retrieve information, cleaning the data, creating
-            database and database tables, storing data into database tables, and
-            creating visualizations. A link to the GitHub repository with code
-            can be found
+            museum APIs to retrieve information, cleaning the data, creating a
+            database and its tables, storing data into database tables, and
+            creating visualizations. The code has been stored in a
             <strong
               ><a
                 href="https://github.com/parubanjara/finalproject206/tree/main/pbanjara"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                here</a
+                GitHub repository</a
               ></strong
             >.
           </p>
         </section>
-        <section class="data_science_sixth">
+        <section class="data_science_seventh">
           <img
             src="images/si_330_project.png"
             alt="Data Manipulation Project"
           />
           <p tabindex="0">
-            This project was for a data manipulation course. I worked with
+            This project is for a data manipulation course. I worked with
             real-world datasets from Southeast Michigan with a team of four.
             This project was an opportunity to utilize the data manipulation
             skills obtained throughout the semester. I answered four different
-            questions by performing groupby and mean aggregate to identify the
-            fire incident types and the average time needed to resolve a fire
-            incident after it was reported, time series analysis of Ford stock
-            prices, sentiment analysis on the association between the 911 call
-            description and the type of crime, and finally groupby and mean
-            aggregate to identify bird frequency by mean temperature. The
-            presentation link can be found
+            questions that involved identifying fire incident types and the
+            average time needed to resolve a fire incident after it was
+            reported, time series analysis of Ford stock prices, sentiment
+            analysis on the association between the 911 call description and the
+            type of crime, and finally, analyzing bird migration frequency
+            patterns based on mean temperature. Please find the project
             <strong
               ><a
                 href="https://docs.google.com/presentation/d/1LwOSRxHku8yYAFnz7Sh5g2buBSdRKGgtcqrFVFxW2xE/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                >here</a
+                >presentation</a
               ></strong
             >.
           </p>
@@ -249,63 +309,64 @@
             interactive dashboard incorporated three different personas and a
             home page. I led the project by guiding other team members from
             developing mock-up sketches of the personas and turning them into
-            prototypes to developing a proof-of-concept interactive dashboard. A
-            slide deck presentation of the project can be found
+            prototypes to developing a proof-of-concept interactive dashboard.
+            Please find the project
             <strong
               ><a
                 href="https://docs.google.com/presentation/d/16OX6THB-3NsBlguxR-pKElVsLWQI8pG9lMYfPythetY/edit?usp=sharing"
                 target="_blank"
                 rel="noopener"
-                >here</a
+              >
+                presentation</a
               ></strong
-            >. The poster can be found
+            >, a
             <strong
               ><a
                 href="https://drive.google.com/file/d/12UbudEHtQRryNHa7eiROP7Jbta_KfDqV/view?usp=sharing"
                 target="_blank"
                 rel="noopener"
-                >here</a
+                >poster</a
               ></strong
-            >
-            and a published paper with mentions of contributors of the
-            interactive dashboard can be found
+            >, and a
             <strong
               ><a
                 href="https://onlinelibrary.wiley.com/doi/full/10.1002/leap.1656"
                 target="_blank"
                 rel="noopener"
-                >here</a
+                >published paper</a
               ></strong
-            >.
+            >
+            with mentions of contributors of the interactive dashboard.
           </p>
         </section>
         <section class="web_dev_second">
           <img
             class="web_dev2"
             src="images/weather_finder_app.png"
-            alt="Poster Presentation at UMSI Expo 2024"
+            alt="Weather Finder App"
             tabindex="0"
           />
           <p tabindex="0">
-            I developed a basic weather finder app for a web development course
-            called Building Interactive Applications (SI 379). I used a weather
-            dataset provided by the National Centers for Environmental
-            Information. First, I performed data cleaning and transformed the
-            data into JSON format so that I could use it for the app. I used the
-            Leaflet JavaScript library to integrate a map into the project. The
-            design was mainly focused on functionality (JavaScript) rather than
-            on the presentation and accessibility. The app utilizes heatmap and
-            marker components to present the annual averages for temperature,
-            wind, precipitation and snowfall for various places in the U.S. A
-            link to the web application can be found
+            I developed a basic
             <strong
               ><a
                 href="https://parubanjara.github.io/si_379/final_project/index.html"
                 target="_blank"
                 rel="noopener"
-                >here</a
+                >weather finder app</a
               ></strong
-            >.
+            >
+            for a web development course called Building Interactive
+            Applications (SI 379). I used a weather dataset provided by the
+            National Centers for Environmental Information. First, I performed
+            data cleaning and transformed the data into JSON format so that I
+            could use it for the app. I used the Leaflet JavaScript library to
+            integrate a map into the project. The app utilizes heatmap and
+            marker components to present the annual averages for temperature,
+            wind, precipitation and snowfall for various places in the U.S.
+            Although the design was primarily focused on functionality
+            (JavaScript), presentation and accessibility could be incorporated
+            to improve users' experiences.
           </p>
         </section>
 
@@ -318,8 +379,8 @@
             tabindex="0"
           />
           <p tabindex="0">
-            I worked as a Research Assistant where I assisted with labeling
-            thousands of plant images using a software called Labelbox for
+            I worked as a research assistant and assisted with labeling
+            thousands of plant images using software called Labelbox for
             training machine learning models. I used bounding box and
             segmentation methods to annotate and produce high quality images.
             Besides annotating images, I gained skills in effective
@@ -338,7 +399,7 @@
             project was the future of work. The project involved research
             writing, conducting interviews, and thematic analysis where we
             collected data and performed qualitative coding and then identified
-            themes using Lucidspark board. At the end of the project, we
+            themes using a Lucidspark board. At the end of the project, we
             prepared a report of our research findings and delivered it to the
             client.
           </p>
@@ -380,7 +441,7 @@
             leadership position at a hospital as part of my education where my
             responsibilities included supervising the work of junior students
             and auxiliary staff, assigning daily work to the staff and students,
-            maintaining good interpersonal relationship, co-operating and
+            maintaining good interpersonal relationships, co-operating and
             co-ordinating with different categories of health care staff and
             departments, performing a case study of a critical patient and
             presenting the case, attending doctors’ rounds, maintaining
@@ -403,8 +464,8 @@
           <p tabindex="0">
             While working as a student nurse, I also gained soft skills, such as
             working in a team, building interpersonal relationships with people
-            from different domains and backgrounds, working under a stressful
-            situation and acting accordingly, and providing counseling and
+            from different domains and backgrounds, working in stressful
+            situations and acting accordingly, and providing counseling and
             health guidance to patients and clients. This is a picture of myself
             working at a Central Sterile Services Department (CSSD). The
             sterilization equipment can be seen behind me.
@@ -439,7 +500,7 @@
             were visiting a Cerebral Palsy Center in Nepal, where we got to
             learn about children with Cerebral Palsy. There, I had the chance to
             hear about their daily struggles, progress, and intellectual
-            abilities from their care takers.
+            abilities from their caretakers.
           </p>
         </section>
         <h2 tabindex="0">Certificates</h2>

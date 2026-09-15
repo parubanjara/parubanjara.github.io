@@ -269,6 +269,7 @@ main a {
 .data_science_fourth,
 .data_science_fifth,
 .data_science_sixth,
+.data_science_seventh,
 .web_dev_first,
 .web_dev_second,
 .research_first,
@@ -307,6 +308,12 @@ main a {
   box-shadow: none;
   margin: 0 5rem 0 0;
   font-size: 14%;
+}
+
+.data_science_new p {
+  grid-column: 1 / -1;
+  justify-self: stretch;
+  margin-right: 0;
 }
 
 .education {
