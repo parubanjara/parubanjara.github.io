@@ -43,6 +43,11 @@ main{
     padding-left: 5%;
 }
 
+#cert a{
+    text-decoration: none;
+    color: black;
+}
+
 li{
     padding-bottom: 0.5%;
 }
